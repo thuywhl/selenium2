@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.TestNGClass">
+      <class name="TestNG.GenerateHTML">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="LaunchSite"/>
-          <include name="CreateBooking"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- TestNG.TestNGClass -->
+      </class> <!-- TestNG.GenerateHTML -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

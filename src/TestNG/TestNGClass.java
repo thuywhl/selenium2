@@ -2,6 +2,7 @@ package TestNG;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -20,6 +21,7 @@ public class TestNGClass {
 	//	driver.navigate().to("http://test-ua.urbanadventures.com");
 		driver.manage().window().maximize();
 		
+		
 	}
 	
 	
@@ -33,6 +35,8 @@ public class TestNGClass {
       int titleLength = driver.getTitle().length();
       System.out.println("title of website is: " + title);
       System.out.println("Length of titile is: " + titleLength);
+      String pagesource = driver.getPageSource();
+      
       
       
   
@@ -43,7 +47,7 @@ public class TestNGClass {
   {
 	  System.out.println("Create booking");
 	  //driver.findElement(By.xpath(".//*[@class='tour-tile']/div")).click();
-	  driver.findElement(By.xpath("//*[@class='tour-tile']")).click();
+//	  driver.findElement(By.xpath("//*[@class='tour-tile']")).click();
 	  
 	
   }
